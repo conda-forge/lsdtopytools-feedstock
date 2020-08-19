@@ -61,7 +61,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/bgailleton/lsdtopytools
+  home: https://lsdtopotools.github.io
   summary: High-level interface to LSDTopoTools in python. Include as much tools as we can port in python, for the rest see our docker solutions. This package is using lsdtt-xtensor-python as
   license: Unlicense
   license_file: LICENSE
