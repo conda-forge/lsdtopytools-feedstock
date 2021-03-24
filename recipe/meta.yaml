@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lsdtopytools-{{ version }}.tar.gz
-  sha256: f35336638927ad9ac9c529144f39fc8cae60a4451adecc88220829668db1eeca
+  sha256: 095731b8ac04333622f8af2e2da054cd1a58948f167cf095a185134409476666
 
 build:
   number: 0
