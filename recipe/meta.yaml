@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lsdtopytools-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lsdtopytools-{{ version }}.tar.gz
   sha256: 095731b8ac04333622f8af2e2da054cd1a58948f167cf095a185134409476666
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - lsdtt-concavity-tools=scripts_for_lsdtopytools.lsdtt_concavity_tools:main_concavity
@@ -36,7 +36,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - click >=6.0
     - gdal
@@ -46,7 +46,7 @@ requirements:
     - numba
     - numpy
     - pandas
-    - python >=3.7
+    - python >={{ python_min }}
     - rasterio
     - scipy
     - pytables
@@ -59,6 +59,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://lsdtopotools.github.io
